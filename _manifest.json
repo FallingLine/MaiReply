@@ -1,0 +1,25 @@
+﻿{
+  "manifest_version": 1,
+  "name": "Say 插件 (Say Plugin)",
+  "version": "1.0.0",
+  "description": "让管理员通过 /say 命令让bot说出指定内容",
+  "author": {
+    "name": "custom"
+  },
+  "license": "MIT",
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "4.0.0"
+  },
+  "plugin_info": {
+    "is_built_in": false,
+    "components": [
+      {
+        "type": "command",
+        "name": "say",
+        "description": "让bot说出指定内容（仅管理员）",
+        "pattern": "/say <文本>"
+      }
+    ]
+  }
+}
